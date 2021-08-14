@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html >
 <!--From https://codepen.io/frytyler/pen/EGdtg-->
 <head>
@@ -15,21 +15,21 @@
 
 <body>
  <div class="login">
-	<h1>Prédiction des résiliations en assurance santé</h1>
+	
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="profession" placeholder="profession" required="required" />
-        <input type="text" name="régime" placeholder="régime" required="required" />
-	<input type="text" name="situation_pros" placeholder="situation_pros" required="required" />
+    	<input type="text" name="profession" placeholder="profession" required="required" id='query1' />{{query1}}
+        <input type="text" name="régime" placeholder="régime" required="required" id='query2'/>{{query2}}
+	<input type="text" name="situation_pros" placeholder="situation_pros" required="required" id='query3' />{{query3}}
 
-	<input type="text" name="Age" placeholder="Age" required="required" />
-        <input type="text" name="Enfant" placeholder="Enfant" required="required" />
-        <input type="text" name="Tarif" placeholder="Tarif" required="required" />
-        <input type="text" name="Garantie" placeholder="Garantie" required="required" />
-        <input type="text" name="région" placeholder="région" required="required" />
-        <input type="text" name="Ancienneté" placeholder="Ancienneté" required="required" />
-        <input type="text" name="compagnie précédente" placeholder="compagnie précédente" required="required" />
+	<input type="text" name="Age" placeholder="Age" required="required" id='query4' />{{query4}}
+        <input type="text" name="Enfant" placeholder="Enfant" required="required" id='query5' />{{query5}}
+        <input type="text" name="Tarif" placeholder="Tarif" required="required" id='query6' />{{query6}}
+        <input type="text" name="Garantie" placeholder="Garantie" required="required" id='query7' />{{query7}}
+        <input type="text" name="région" placeholder="région" required="required" id='query8' />{{query8}}
+        <input type="text" name="Ancienneté" placeholder="Ancienneté" required="required" id='query9' />{{query9}}
+        <input type="text" name="compagnie précédente" placeholder="compagnie précédente" required="required" id='query10' />{{query10}}
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
    {{ prediction_text }}
@@ -81,7 +81,7 @@ body {
 	height:400px;
 }
 
-.login h1 { color: #fff; text-shadow: 0 0 4px rgba(0,0,0,0); letter-spacing:1px; text-align:center; }
+.login h1 { color: #fff; text-shadow: 0 0 1px rgba(0,0,0,0); letter-spacing:1px; text-align:center; }
 
 input { 
 	width: 100%; 
@@ -90,7 +90,7 @@ input {
 	border: none;
 	outline: none;
 	padding: 10px;
-	font-size: 13px;
+	font-size: 10px;
 	color: #fff;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 	border: 1px solid rgba(0,0,0,0.3);
