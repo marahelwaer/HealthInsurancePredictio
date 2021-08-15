@@ -9,7 +9,7 @@ Created on Mon Aug  3 21:11:12 2020
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
+from sklearn.naive_bayes import BernoulliNB
 from sklearn import metrics
 from flask import Flask, request, render_template
 import pickle
