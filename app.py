@@ -55,7 +55,7 @@ def predict():
         o1 = "The contract will be cancelled"
         o2 = "Confidence: {}".format(probablity*100)
         
-    return render_template('home.html', prediction_text=o1, query1 = request.form['query1'], query2 = request.form['query2'],query3 = request.form['query3'],query4 = request.form['query4'],query5 = request.form['query5'],query6 = request.form['query6'],query7= request.form['query7'],query8 = request.form['query8'],query9 = request.form['query9'],query10 = request.form['query10'])
+    return render_template('home.html', output1=o1, query1 = request.form['query1'], query2 = request.form['query2'],query3 = request.form['query3'],query4 = request.form['query4'],query5 = request.form['query5'],query6 = request.form['query6'],query7= request.form['query7'],query8 = request.form['query8'],query9 = request.form['query9'],query10 = request.form['query10'])
     
 if __name__ == "__main__":
     app.run()
